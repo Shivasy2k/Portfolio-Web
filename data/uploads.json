@@ -1,0 +1,13 @@
+{
+  "profilePhoto": "assets/img/profile/",
+  "projectImages": "assets/img/projects/",
+  "logos": "assets/img/logos/",
+  "resume": "content/resume/",
+  "certificates": "content/certificates/",
+  "publications": "content/publications/",
+  "talks": "content/talks/",
+  "blogs": "content/blogs/",
+  "patents": "content/patents/",
+  "media": "content/media/",
+  "documents": "content/documents/"
+}

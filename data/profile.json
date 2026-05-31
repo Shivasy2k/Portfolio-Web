@@ -1,0 +1,53 @@
+{
+  "name": "Sivakumar Dhanasekar",
+  "role": "Lead Software Engineer and Enterprise Architect",
+  "email": "sivakumar.dhanasekar@ieee.org",
+  "location": "Atlanta, GA",
+  "links": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/sivakumar-dhanasekar/"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/Shivasy2k"
+    }
+  ],
+  "stats": [
+    {
+      "value": "20+",
+      "label": "Years engineering leadership"
+    },
+    {
+      "value": "100+",
+      "label": "Technical papers reviewed"
+    },
+    {
+      "value": "10-20",
+      "label": "Developers mentored per team"
+    },
+    {
+      "value": "2",
+      "label": "Enterprise domains: fintech and retail"
+    }
+  ],
+  "bio": [
+    "Sivakumar Dhanasekar is a software engineering leader and enterprise architect with more than two decades of experience building enterprise-scale applications across financial technology, retail, identity, fraud, and supply-chain domains.",
+    "His work focuses on AI-driven, cloud-native, and data-centric platforms that combine secure architecture, scalable microservices, API orchestration, and practical automation.",
+    "At Equifax, he leads digital transformation initiatives for identity and fraud services, including AI-based solutions for device reputation, fraud risk scoring, trust scoring, and verification confidence."
+  ],
+  "expertise": [
+    "Enterprise Architecture",
+    "Identity and Fraud Platforms",
+    "AI-Enabled Risk Scoring",
+    "Cloud Migration Strategy",
+    "Java / Spring Boot Microservices",
+    "REST API Design",
+    "Kubernetes and Docker",
+    "GCP and AWS",
+    "Secure Engineering Governance",
+    "Product Ownership",
+    "Distributed Team Leadership",
+    "CI/CD Modernization"
+  ]
+}

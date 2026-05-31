@@ -1,0 +1,30 @@
+[
+  {
+    "period": "Jun 2021 - Present",
+    "role": "Lead Developer and Product Owner",
+    "organization": "Equifax",
+    "location": "Atlanta, GA",
+    "summary": "Leading Identity and Fraud Services platform work, including Java/Spring Boot microservices, GCP architecture, API orchestration, secure delivery practices, product backlog ownership, and AI-enabled identity and fraud verification solutions."
+  },
+  {
+    "period": "Feb 2019 - May 2021",
+    "role": "Lead Developer",
+    "organization": "Equifax",
+    "location": "Atlanta, GA",
+    "summary": "Directed modernization of legacy applications into secure cloud-ready platforms, leading distributed teams, designing microservices architectures, remediating vulnerabilities, and delivering AWS deployment patterns."
+  },
+  {
+    "period": "May 2016 - Jan 2019",
+    "role": "Team Lead",
+    "organization": "The Home Depot",
+    "location": "Atlanta, GA",
+    "summary": "Led Special Services Order Maintenance modernization, managed offshore delivery, served as application SPOC, defined technical design, and implemented reusable REST APIs for in-store order workflows."
+  },
+  {
+    "period": "2007 - 2016",
+    "role": "Senior Java Developer / Java Developer / QA Lead",
+    "organization": "The Home Depot",
+    "location": "Atlanta, GA and Chennai, India",
+    "summary": "Delivered retail pricing, replenishment, supply-chain visibility, distribution network, and quality engineering initiatives across Java/J2EE, Struts, Hibernate, JSP, REST services, DB2, Tomcat, Jenkins, and test automation."
+  }
+]
