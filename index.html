@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css?v=20260601-tabs" />
 </head>
-<body>
+<body data-page="home">
   <header class="top-rail">
     <div class="rail-line">AI · Fraud · Fintech · Cloud-Native Architecture</div>
     <div class="rail-links">
@@ -39,91 +39,28 @@
           <span>Author &amp; Speaker</span>
         </div>
         <div class="actions">
-          <a class="button primary" href="#innovation">View innovation</a>
-          <a class="button secondary" href="#about">About</a>
+          <a class="button primary" href="innovation.html">View innovation</a>
+          <a class="button secondary" href="about.html">About</a>
         </div>
       </div>
       <aside class="hero-metrics" data-render="stats"></aside>
     </section>
 
     <nav class="section-nav" data-nav>
-      <a href="#about">About</a>
-      <a href="#innovation">Invention &amp; Innovation</a>
-      <a href="#leadership">Leadership &amp; Consulting</a>
-      <a href="#research">Research</a>
-      <a href="#writing">Blogs &amp; Articles</a>
-      <a href="#recognition">Recognition</a>
-      <a href="#contact">Connect</a>
+      <a href="about.html" data-page-link="about">About</a>
+      <a href="innovation.html" data-page-link="innovation">Invention &amp; Innovation</a>
+      <a href="leadership.html" data-page-link="leadership">Leadership &amp; Consulting</a>
+      <a href="research.html" data-page-link="research">Research</a>
+      <a href="writing.html" data-page-link="writing">Blogs &amp; Articles</a>
+      <a href="recognition.html" data-page-link="recognition">Recognition</a>
+      <a href="contact.html" data-page-link="contact">Connect</a>
     </nav>
 
-    <section id="about" class="section about-section">
-      <div class="section-title">
-        <h2>About</h2>
-      </div>
-      <div class="portrait-panel">
-        <img src="assets/img/profile/sivakumar-original-profile.png" alt="Sivakumar Dhanasekar" />
-      </div>
-      <div class="about-copy">
-        <h3>Sivakumar Dhanasekar</h3>
-        <p class="subtitle">Lead Software Engineer and Enterprise Architect</p>
-        <div class="prose" data-render="bio"></div>
-      </div>
-    </section>
-
-    <section id="innovation" class="section two-column">
-      <div class="section-title">
-        <h2>Invention &amp; Innovation</h2>
-      </div>
-      <div class="feature-card">
-        <span class="label">Patent Filed</span>
-        <h3>Master of Service Meshes</h3>
-        <p>Patent application filed. Inventor: Sivakumar Dhanasekar. Ref. No: 096923-1509158 (EFX-216US).</p>
-      </div>
-    </section>
-
-    <section id="leadership" class="section muted">
-      <div class="section-title">
-        <h2>Leadership &amp; Consulting</h2>
-      </div>
-      <div class="timeline" data-render="experience"></div>
-    </section>
-
-    <section id="expertise" class="section two-column">
+    <section class="section two-column">
       <div class="section-title">
         <h2>Professional Contributions</h2>
       </div>
       <div class="pill-grid" data-render="expertise"></div>
-    </section>
-
-    <section id="research" class="section muted">
-      <div class="section-title">
-        <h2>Peer-Reviewed Research</h2>
-      </div>
-      <div class="card-grid" data-render="publications"></div>
-    </section>
-
-    <section id="writing" class="section">
-      <div class="section-title">
-        <h2>Blogs &amp; Articles</h2>
-      </div>
-      <div class="card-grid" data-render="writing"></div>
-    </section>
-
-    <section id="recognition" class="section muted">
-      <div class="section-title">
-        <h2>Inspiration &amp; Recognitions</h2>
-      </div>
-      <div class="card-grid" data-render="recognition"></div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="section-title">
-        <h2>Connect</h2>
-      </div>
-      <div>
-        <p class="contact-lead">Open to technical advisory, architecture review, applied AI, cloud migration, fraud strategy, and speaking opportunities.</p>
-        <div class="contact-card" data-render="contact"></div>
-      </div>
     </section>
   </main>
 

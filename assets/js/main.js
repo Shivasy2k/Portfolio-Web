@@ -113,9 +113,22 @@ const initMenu = () => {
   });
 };
 
+const initActivePage = () => {
+  const page = document.body.dataset.page;
+  if (!page) return;
+  document.querySelectorAll("[data-page-link]").forEach((link) => {
+    if (link.dataset.pageLink === page) {
+      link.classList.add("is-active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
+};
+
 const init = async () => {
-  document.querySelector("[data-year]").textContent = new Date().getFullYear();
+  const yearEl = document.querySelector("[data-year]");
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
   initMenu();
+  initActivePage();
 
   const [profile, experience, publications, writing, recognition] = await Promise.all([
     loadJSON("data/profile.json"),

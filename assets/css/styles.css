@@ -122,6 +122,11 @@ h1 {
   color: var(--ink);
 }
 
+.page-heading {
+  margin-bottom: 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+}
+
 h2 {
   font-size: clamp(1.7rem, 3.2vw, 2.65rem);
 }
@@ -249,7 +254,8 @@ h3 {
 }
 
 .section-nav a:hover,
-.section-nav a:focus-visible {
+.section-nav a:focus-visible,
+.section-nav a.is-active {
   color: var(--white);
   background: var(--accent);
   outline: none;
