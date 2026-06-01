@@ -1,16 +1,16 @@
 :root {
-  --page: #f2f7f9;
-  --paper: #fbfdfe;
-  --ink: #0c2233;
-  --muted: #4d6575;
-  --soft: #6f8490;
-  --line: #9bb9c4;
-  --line-strong: #1b6678;
-  --accent: #0f6b7d;
-  --accent-dark: #083f4d;
-  --panel: #e7f0f3;
+  --page: #f6f2ec;
+  --paper: #fffdf8;
+  --ink: #1f2528;
+  --muted: #5f6461;
+  --soft: #7a746c;
+  --line: #c9bda9;
+  --line-strong: #8f4b3e;
+  --accent: #8f4b3e;
+  --accent-dark: #352b34;
+  --panel: #ece4d8;
   --white: #ffffff;
-  --shadow: 0 18px 48px rgba(12, 34, 51, 0.1);
+  --shadow: 0 18px 48px rgba(31, 37, 40, 0.12);
 }
 
 * {
@@ -83,8 +83,8 @@ img {
   padding-top: clamp(28px, 5vw, 54px);
   padding-bottom: clamp(28px, 4vw, 46px);
   background:
-    linear-gradient(90deg, rgba(251, 253, 254, 0.98), rgba(242, 247, 249, 0.82)),
-    radial-gradient(circle at 84% 20%, rgba(15, 107, 125, 0.11), transparent 32%);
+    linear-gradient(90deg, rgba(255, 253, 248, 0.98), rgba(246, 242, 236, 0.84)),
+    radial-gradient(circle at 84% 20%, rgba(143, 75, 62, 0.12), transparent 32%);
 }
 
 .eyebrow {
@@ -408,7 +408,7 @@ h3 {
 
 .prose {
   max-width: 980px;
-  color: #263f4e;
+  color: #343a3c;
   font-size: 1.03rem;
 }
 
@@ -577,7 +577,7 @@ h3 {
 
 .contact-lead {
   max-width: 820px;
-  color: #d8e9ee;
+  color: #ede6dc;
   font-size: 1.1rem;
 }
 
