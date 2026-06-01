@@ -77,7 +77,7 @@ img {
 .hero {
   min-height: 78vh;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
   align-items: start;
   gap: clamp(32px, 7vw, 96px);
   padding-top: clamp(48px, 8vw, 92px);
@@ -135,6 +135,13 @@ h3 {
   font-size: clamp(1.35rem, 2vw, 2rem);
 }
 
+.hero-summary {
+  max-width: 790px;
+  margin: -4px 0 24px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.45vw, 1.2rem);
+}
+
 .credential-grid {
   display: flex;
   flex-wrap: wrap;
@@ -186,11 +193,66 @@ h3 {
   background: var(--white);
 }
 
-.hero-metrics {
-  align-self: end;
+.hero-side {
+  align-self: start;
   display: grid;
-  gap: 28px;
-  padding-bottom: 8px;
+  gap: 22px;
+}
+
+.identity-badge {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--shadow);
+}
+
+.identity-badge img {
+  width: 100%;
+  aspect-ratio: 4 / 4.2;
+  object-fit: cover;
+  object-position: center 18%;
+  border-bottom: 1px solid var(--line);
+}
+
+.identity-copy {
+  position: relative;
+  padding: 18px 18px 20px;
+}
+
+.identity-copy h2 {
+  margin-bottom: 8px;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-size: 1.35rem;
+}
+
+.identity-copy p {
+  margin: 0;
+  padding-right: 48px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.linkedin-mark {
+  position: absolute;
+  right: 18px;
+  bottom: 20px;
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  color: var(--white);
+  background: #0a66c2;
+  border-radius: 3px;
+  font-weight: 800;
+  font-size: 1.04rem;
+  font-family: Arial, sans-serif;
+}
+
+.hero-metrics {
+  display: grid;
+  gap: 20px;
   text-align: right;
 }
 
@@ -399,6 +461,12 @@ h3 {
   gap: 18px;
 }
 
+.home-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+}
+
 .content-card {
   min-height: 210px;
   display: flex;
@@ -414,6 +482,31 @@ h3 {
   margin-top: auto;
   color: var(--accent-dark);
   font-weight: 800;
+}
+
+.home-card {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.8);
+  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+
+.home-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: var(--white);
+}
+
+.home-card h3 {
+  margin: 12px 0 10px;
+}
+
+.home-card p {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
 .contact {
