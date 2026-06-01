@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260601-tabs" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260601-home-density" />
 </head>
 <body data-page="home">
   <header class="top-rail">
@@ -20,6 +20,16 @@
       <span>100+ Peer Reviews</span>
     </div>
   </header>
+
+  <nav class="section-nav" data-nav>
+    <a href="about.html" data-page-link="about">About</a>
+    <a href="innovation.html" data-page-link="innovation">Invention &amp; Innovation</a>
+    <a href="leadership.html" data-page-link="leadership">Leadership &amp; Consulting</a>
+    <a href="research.html" data-page-link="research">Research</a>
+    <a href="writing.html" data-page-link="writing">Blogs &amp; Articles</a>
+    <a href="recognition.html" data-page-link="recognition">Recognition</a>
+    <a href="contact.html" data-page-link="contact">Connect</a>
+  </nav>
 
   <main id="home">
     <section class="hero">
@@ -41,6 +51,16 @@
           <span>Technical Reviewer</span>
           <span>Author &amp; Speaker</span>
         </div>
+        <div class="hero-detail-grid">
+          <article>
+            <span class="label">Current Focus</span>
+            <p>Identity and fraud services, AI-assisted risk scoring, device reputation, and secure API orchestration at enterprise scale.</p>
+          </article>
+          <article>
+            <span class="label">Technical Base</span>
+            <p>Java, Spring Boot, REST APIs, Kubernetes, Docker, GCP, AWS, CI/CD, and cloud-ready modernization.</p>
+          </article>
+        </div>
         <div class="actions">
           <a class="button primary" href="innovation.html">View innovation</a>
           <a class="button secondary" href="about.html">About</a>
@@ -59,15 +79,33 @@
       </aside>
     </section>
 
-    <nav class="section-nav" data-nav>
-      <a href="about.html" data-page-link="about">About</a>
-      <a href="innovation.html" data-page-link="innovation">Invention &amp; Innovation</a>
-      <a href="leadership.html" data-page-link="leadership">Leadership &amp; Consulting</a>
-      <a href="research.html" data-page-link="research">Research</a>
-      <a href="writing.html" data-page-link="writing">Blogs &amp; Articles</a>
-      <a href="recognition.html" data-page-link="recognition">Recognition</a>
-      <a href="contact.html" data-page-link="contact">Connect</a>
-    </nav>
+    <section class="section home-overview">
+      <div class="section-title">
+        <h2>At a Glance</h2>
+      </div>
+      <div class="home-detail-grid">
+        <article class="detail-card">
+          <span class="label">Enterprise Platforms</span>
+          <h3>Identity, fraud, and fintech systems</h3>
+          <p>Designing services for fraud risk, device reputation, verification confidence, and resilient API delivery.</p>
+        </article>
+        <article class="detail-card">
+          <span class="label">Modernization</span>
+          <h3>Cloud-native engineering</h3>
+          <p>Leading Java, Spring Boot, Kubernetes, Docker, GCP, AWS, and CI/CD modernization across production teams.</p>
+        </article>
+        <article class="detail-card">
+          <span class="label">Applied AI</span>
+          <h3>Agents, RAG, and secure automation</h3>
+          <p>Publishing and building around AI agents, retrieval systems, secure orchestration, and explainable risk workflows.</p>
+        </article>
+        <article class="detail-card">
+          <span class="label">Research Service</span>
+          <h3>IEEE, IETE, and peer review</h3>
+          <p>IEEE Senior Member, IETE Fellow, author, conference contributor, and reviewer for 100+ scholarly manuscripts.</p>
+        </article>
+      </div>
+    </section>
 
     <section class="section two-column">
       <div class="section-title">
@@ -113,6 +151,34 @@
         </a>
       </div>
     </section>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>Featured Work</h2>
+      </div>
+      <div class="home-card-grid dense">
+        <a class="home-card" href="innovation.html">
+          <span class="label">Patent Filed</span>
+          <h3>Master of Service Meshes</h3>
+          <p>Reference No: 096923-1509158 (EFX-216US).</p>
+        </a>
+        <a class="home-card" href="research.html">
+          <span class="label">Research</span>
+          <h3>LLM Systems and Cloud-Native AI</h3>
+          <p>IEEE conference papers and applied AI architecture research.</p>
+        </a>
+        <a class="home-card" href="writing.html">
+          <span class="label">Writing</span>
+          <h3>AI Agents, RAG, Crypto Fraud</h3>
+          <p>Technical articles across Dev.to, HackerNoon, and LinkedIn.</p>
+        </a>
+        <a class="home-card" href="leadership.html">
+          <span class="label">Leadership</span>
+          <h3>Equifax and Home Depot</h3>
+          <p>Platform delivery, modernization, product ownership, and teams.</p>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -120,6 +186,6 @@
     <span>AI · Fraud · Cloud · Enterprise Architecture</span>
   </footer>
 
-  <script src="assets/js/main.js?v=20260601-tabs" defer></script>
+  <script src="assets/js/main.js?v=20260601-home-density" defer></script>
 </body>
 </html>
