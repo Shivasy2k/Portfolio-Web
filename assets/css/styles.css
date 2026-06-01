@@ -219,18 +219,24 @@ h3 {
   top: 0;
   z-index: 20;
   display: flex;
-  gap: 30px;
+  gap: 0;
   overflow-x: auto;
   white-space: nowrap;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 0;
+  padding-bottom: 0;
   border-top: 3px solid var(--accent-dark);
-  border-bottom: 1px solid var(--line);
-  background: rgba(251, 253, 254, 0.96);
+  border-bottom: 2px solid var(--accent-dark);
+  background: rgba(251, 253, 254, 0.98);
   backdrop-filter: blur(14px);
 }
 
 .section-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 0 22px;
+  border-right: 1px solid var(--line);
   color: var(--ink);
   font-size: 0.82rem;
   font-weight: 800;
@@ -238,8 +244,15 @@ h3 {
   text-transform: uppercase;
 }
 
-.section-nav a:hover {
-  color: var(--accent);
+.section-nav a:first-child {
+  border-left: 1px solid var(--line);
+}
+
+.section-nav a:hover,
+.section-nav a:focus-visible {
+  color: var(--white);
+  background: var(--accent);
+  outline: none;
 }
 
 .section {
