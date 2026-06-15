@@ -1,0 +1,27 @@
+[
+  {
+    "event": "LA Hacks",
+    "role": "Judge",
+    "location": "Los Angeles, CA"
+  },
+  {
+    "event": "Rosehack",
+    "role": "Judge",
+    "location": "Riverside, CA"
+  },
+  {
+    "event": "Globee Awards - Artificial Intelligence",
+    "role": "Judge",
+    "location": "Industry Awards"
+  },
+  {
+    "event": "Globee Awards - Excellence",
+    "role": "Judge",
+    "location": "Industry Awards"
+  },
+  {
+    "event": "Globee Awards - Cyber Security",
+    "role": "Judge",
+    "location": "Industry Awards"
+  }
+]

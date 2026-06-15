@@ -1,0 +1,82 @@
+[
+  {
+    "period": "2015 - 2017",
+    "title": "Home Depot delivery and supply-chain modernization",
+    "organization": "The Home Depot",
+    "summary": "Supported retail order and supply-chain platform modernization tied to faster fulfillment, expanded delivery options, and distribution-network growth for stores, homes, and job sites.",
+    "impactValue": "YoY value: +6.9% sales growth in 2016; +6.7% in 2017",
+    "sources": [
+      {
+        "label": "Retail Technology Innovation Hub",
+        "url": "https://retailtechinnovationhub.com/home/2018/6/15/home-depot-announces-major-supply-chain-initiative"
+      },
+      {
+        "label": "Supply Chain Dive",
+        "url": "https://www.supplychaindive.com/news/home-depot-new-distribution-locations-lockers/549331/"
+      },
+      {
+        "label": "The Home Depot",
+        "url": "https://ir.homedepot.com/news-releases/2018/09-26-2018-132947935"
+      }
+    ]
+  },
+  {
+    "period": "2017 - 2019",
+    "title": "Self-checkout and store technology modernization",
+    "organization": "The Home Depot / Fujitsu",
+    "summary": "Contributed to retail platform delivery during a period of checkout modernization, store experience improvements, and front-end technology evolution.",
+    "impactValue": "YoY value: +7.2% sales growth in 2018; +1.9% in 2019",
+    "sources": [
+      {
+        "label": "Fujitsu",
+        "url": "https://www.fujitsu.com/us/about/resources/news/press-releases/2019/new-component-press-release.html"
+      },
+      {
+        "label": "Chain Store Age",
+        "url": "https://chainstoreage.com/news/home-depot-launches-fujitsu-self-checkout-software/"
+      }
+    ]
+  },
+  {
+    "period": "2019 - 2021",
+    "title": "Equifax cloud-native security and platform transformation",
+    "organization": "Equifax",
+    "summary": "Led and contributed to secure cloud-ready application modernization, identity and fraud platform engineering, API orchestration, and technology-security work as Equifax advanced its cloud transformation.",
+    "impactValue": "YoY value: +17.7% revenue growth in 2020; +19.3% in 2021",
+    "sources": [
+      {
+        "label": "Equifax Newsroom",
+        "url": "https://www.equifax.com/newsroom/all-news/-/story/why-equifax-is-leaning-into-m-a-in-2021-4/"
+      },
+      {
+        "label": "Equifax Newsroom",
+        "url": "https://www.equifax.com/newsroom/all-news/-/story/part-ii-technology-security-integral-to-the-new-equifax-/"
+      },
+      {
+        "label": "Equifax Newsroom",
+        "url": "https://www.equifax.com/newsroom/all-news/-/story/equifax-fuels-journey-to-net-zero-through-cloud-native-transformation/"
+      }
+    ]
+  },
+  {
+    "period": "2021 - 2026",
+    "title": "Digital identity, fraud, and new-product innovation",
+    "organization": "Equifax",
+    "summary": "Advanced identity and fraud services, digital identity capabilities, cloud-based data products, and secure decisioning platforms supporting customer growth and fraud-risk mitigation.",
+    "impactValue": "YoY value: +4% revenue growth in 2022; new-product revenue up 50%+",
+    "sources": [
+      {
+        "label": "Equifax Digital Identity",
+        "url": "https://investor.equifax.com/news-events/press-releases/detail/1194/equifax-launches-digital-identity-as-a-service"
+      },
+      {
+        "label": "Equifax Annual Report",
+        "url": "https://assets.equifax.com/marketing/US/assets/equifax-2022-annual-report-web.pdf"
+      },
+      {
+        "label": "Equifax Innovation",
+        "url": "https://www.equifax.com/newsroom/all-news/-/story/equifax-innovations-are-revolutionizing-the-credit-industry/"
+      }
+    ]
+  }
+]

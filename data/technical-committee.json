@@ -1,0 +1,37 @@
+[
+  {
+    "role": "TPC Member",
+    "event": "CCNCPS 2026",
+    "location": "Dubai, UAE"
+  },
+  {
+    "role": "International Program Committee",
+    "event": "ASPAI 2026",
+    "location": "Palma de Mallorca, Spain"
+  },
+  {
+    "role": "International Advisory Committee",
+    "event": "IMED 2026",
+    "location": "Kota Kinabalu, Malaysia"
+  },
+  {
+    "role": "TPC Member",
+    "event": "ICAISET 2026",
+    "location": "AlShorouk, Egypt"
+  },
+  {
+    "role": "TPC Member",
+    "event": "IEEE SYSCON 2026",
+    "location": "Halifax, Canada"
+  },
+  {
+    "role": "TPC Member",
+    "event": "ICIM 2026",
+    "location": "Tokyo, Japan"
+  },
+  {
+    "role": "TPC Member",
+    "event": "ICCR 2026",
+    "location": "Tokyo, Japan"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "event": "API Days",
+    "type": "Speaking",
+    "topic": "Beyond Rule Engines: Real-Time Fraud Detection with Graph AI and APIs",
+    "date": "May 2026",
+    "location": "New York"
+  },
+  {
+    "event": "CVR 2026",
+    "type": "Speaking",
+    "topic": "Using AI to Predict, Protect, and Optimize",
+    "date": "April 24 - 25, 2026",
+    "location": "Goa, India"
+  },
+  {
+    "event": "IMED 2026",
+    "type": "Invited Talk",
+    "topic": "Artificial Intelligence in Finance: Risk Management, Fraud Detection, Algorithmic Trading, and RegTech",
+    "date": "March 6 - 7, 2026",
+    "location": "Kota Kinabalu, Malaysia"
+  },
+  {
+    "event": "IMED 2026",
+    "type": "Keynote",
+    "topic": "End-to-End LLM Systems: Data, Training, Evaluation, and Deployment",
+    "date": "March 6 - 7, 2026",
+    "location": "Kota Kinabalu, Malaysia"
+  },
+  {
+    "event": "IEEE TEMS Industry Forum",
+    "type": "Invited Talk",
+    "topic": "The Intelligent Edge: AI Applications Across Modern Financial Systems",
+    "date": "June 19, 2026",
+    "location": "Virtual / IEEE TEMS",
+    "url": "https://www.ieee-tems.org/industry-forum/"
+  }
+]
