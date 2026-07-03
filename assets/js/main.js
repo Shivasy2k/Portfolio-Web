@@ -169,59 +169,6 @@ const renderJudging = (items = []) => {
   `;
 };
 
-const credentialCard = (item) => {
-  const src = safeURL(item.src || "");
-  const isPdf = /\.pdf($|\?|#)/i.test(item.src || "");
-  const thumb = isPdf
-    ? `<div class="credential-doc-thumb" aria-hidden="true"><span>${escapeHTML(item.type || "PDF")}</span></div>`
-    : `<img src="${src}" alt="${escapeHTML(item.title)}" loading="lazy" />`;
-  return `
-    <a class="credential-media-card" href="${src}" target="_blank" rel="noopener noreferrer">
-      <div class="credential-media-thumb">${thumb}</div>
-      <div class="credential-media-copy">
-        <span class="label">${escapeHTML(item.type || "Credential")}</span>
-        <h4>${escapeHTML(item.title)}</h4>
-        ${item.organization ? `<p>${escapeHTML(item.organization)}</p>` : ""}
-      </div>
-    </a>
-  `;
-};
-
-const renderCredentialSubdivisions = (groups = []) => {
-  const target = document.querySelector('[data-render="credential-subdivisions"]');
-  if (!target) return;
-  const refs = groups.map((group) => `
-    <a class="credential-subdivision-ref" href="#credentials-${escapeHTML(group.id)}">
-      <span>${escapeHTML(group.label)}</span>
-      <strong>${(group.items || []).length}</strong>
-    </a>
-  `).join("");
-  const sections = groups.map((group) => {
-    const items = group.items || [];
-    return `
-      <section class="credential-subdivision" id="credentials-${escapeHTML(group.id)}">
-        <div class="credential-subdivision-head">
-          <div>
-            <span class="label">Credentials</span>
-            <h3>${escapeHTML(group.heading || group.label)}</h3>
-          </div>
-          <strong>${items.length} ${items.length === 1 ? "item" : "items"}</strong>
-        </div>
-        ${group.description ? `<p class="credential-subdivision-desc">${escapeHTML(group.description)}</p>` : ""}
-        ${items.length
-          ? `<div class="credential-media-grid">${items.map(credentialCard).join("")}</div>`
-          : `<p class="credential-empty">No files added yet.</p>`}
-      </section>
-    `;
-  }).join("");
-  target.innerHTML = `
-    <div class="credential-subdivision-refs" aria-label="Credential subdivisions">
-      ${refs}
-    </div>
-    ${sections}
-  `;
-};
-
 const renderSpeaking = (items = []) => {
   const target = document.querySelector('[data-render="speaking"]');
   if (!target) return;
@@ -356,7 +303,7 @@ const init = async () => {
   initActivePage();
   initSectionNavigation();
 
-  const [profile, experience, impacts, peerReviews, publications, volunteering, judging, credentials, speaking, technicalCommittee, writing, recognition] = await Promise.all([
+  const [profile, experience, impacts, peerReviews, publications, volunteering, judging, speaking, technicalCommittee, writing, recognition] = await Promise.all([
     loadJSON("data/profile.json"),
     loadJSON("data/experience.json"),
     loadJSON("data/impacts.json"),
@@ -364,7 +311,6 @@ const init = async () => {
     loadJSON("data/publications.json"),
     loadJSON("data/volunteering.json"),
     loadJSON("data/judging.json"),
-    loadJSON("data/credentials.json"),
     loadJSON("data/speaking.json"),
     loadJSON("data/technical-committee.json"),
     loadJSON("data/writing.json"),
@@ -380,7 +326,6 @@ const init = async () => {
   renderPublications(publications);
   renderVolunteering(volunteering);
   renderJudging(judging);
-  renderCredentialSubdivisions(credentials);
   renderSpeaking(speaking);
   renderTechnicalCommittee(technicalCommittee);
   renderCards('[data-render="writing"]', writing, writingCard);
