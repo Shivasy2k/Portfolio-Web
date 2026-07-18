@@ -3,11 +3,11 @@
   "acceptedHeading": "IEEE Conferences & Work in Progress",
   "published": [
     {
-      "source": "IJCRT",
-      "title": "Architecting Trustworthy AI-Assisted Retail Pricing Systems on Cloud-Native Platforms",
-      "date": "May 2025",
+      "source": "IEEE",
+      "title": "End-to-End LLM Systems: Data, Training, Evaluation, and Deployment",
+      "date": "March 2026",
       "status": "Live",
-      "url": "https://ijcrt.org/viewfull.php?&p_id=IJCRT25A5968"
+      "url": "https://ieeexplore.ieee.org/document/11483701"
     },
     {
       "source": "CSC",
@@ -17,11 +17,11 @@
       "url": "https://www.cscjournals.org/library/manuscriptinfo.php?mc=IJSE-197"
     },
     {
-      "source": "IEEE",
-      "title": "End-to-End LLM Systems: Data, Training, Evaluation, and Deployment",
-      "date": "March 2026",
+      "source": "IJCRT",
+      "title": "Architecting Trustworthy AI-Assisted Retail Pricing Systems on Cloud-Native Platforms",
+      "date": "May 2025",
       "status": "Live",
-      "url": "https://ieeexplore.ieee.org/document/11483701"
+      "url": "https://ijcrt.org/viewfull.php?&p_id=IJCRT25A5968"
     },
     {
       "source": "IEEE",
