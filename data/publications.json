@@ -1,4 +1,6 @@
 {
+  "publishedHeading": "Journals & Live IEEE Publications",
+  "acceptedHeading": "IEEE Conferences & Work in Progress",
   "published": [
     {
       "source": "IJCRT",
@@ -30,18 +32,20 @@
   ],
   "accepted": [
     {
-      "source": "CISCom",
+      "source": "IEEE / BDAI",
       "title": "From Prototype to Platform: Cloud-Native AI at Scale",
-      "date": "October 2026",
-      "status": "Accepted",
-      "detail": "Accepted in CISCom. Conference is in Malta, Europe."
+      "date": "July 2026",
+      "status": "Presented in BDAI",
+      "detail": "July 3-5, 2026 | Chongqing, China",
+      "url": "https://www.bdai.net/index.html"
     },
     {
-      "source": "ICCA",
+      "source": "IEEE",
       "title": "Explainable Graph Neural Networks for Payment Fraud Detection and Chargeback Reduction",
-      "date": "December 2026",
-      "status": "ACCEPTED",
-      "detail": "Accepted in ICCA 2026."
+      "date": "",
+      "status": "WIP",
+      "detail": "Registered in ICIEEE.",
+      "url": "https://registration.icieee.com/"
     }
   ]
 }

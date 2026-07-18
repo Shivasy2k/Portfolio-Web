@@ -122,13 +122,13 @@ const renderPublications = (groups = {}) => {
   if (!target) return;
   target.innerHTML = `
     <div class="publication-group">
-      <h3>Scholarly Articles - Published</h3>
+      <h3>${escapeHTML(groups.publishedHeading || "Scholarly Articles - Published")}</h3>
       <div class="publication-list">
         ${(groups.published || []).map(publicationItem).join("")}
       </div>
     </div>
     <div class="publication-group">
-      <h3>Scholarly Articles - Accepted</h3>
+      <h3>${escapeHTML(groups.acceptedHeading || "Scholarly Articles - Accepted")}</h3>
       <div class="publication-list">
         ${(groups.accepted || []).map(publicationItem).join("")}
       </div>
