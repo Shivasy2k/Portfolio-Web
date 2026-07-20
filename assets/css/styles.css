@@ -784,11 +784,21 @@ h3 {
   text-underline-offset: 3px;
 }
 
+body[data-page="innovation"] .section {
+  padding-top: clamp(28px, 4vw, 48px);
+  padding-bottom: clamp(28px, 4vw, 48px);
+}
+
+body[data-page="innovation"] .section.two-column {
+  padding-bottom: clamp(20px, 3vw, 34px);
+}
+
 .innovation-split {
   display: grid;
   grid-template-columns: minmax(360px, 0.92fr) minmax(420px, 1.08fr);
-  gap: clamp(24px, 3vw, 44px);
+  gap: clamp(18px, 2.4vw, 32px);
   align-items: start;
+  padding-top: clamp(24px, 3.6vw, 42px);
 }
 
 .innovation-pane {
@@ -796,7 +806,8 @@ h3 {
 }
 
 .innovation-pane .section-title {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
 }
 
 .publications-pane .card-grid {
@@ -804,7 +815,7 @@ h3 {
 }
 
 .publications-pane .publication-group {
-  margin-top: 22px;
+  margin-top: 16px;
 }
 
 .publications-pane .publication-item {
@@ -824,7 +835,7 @@ h3 {
 
 .architecture-case {
   display: grid;
-  gap: 20px;
+  gap: 14px;
 }
 
 .architecture-title {
@@ -848,7 +859,7 @@ h3 {
 .case-overview {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 18px;
+  gap: 12px;
   align-items: start;
 }
 
@@ -887,7 +898,7 @@ h3 {
   overflow: auto;
   border: 1px solid var(--line);
   background: #edf1f6;
-  box-shadow: 0 18px 45px rgba(57, 47, 36, 0.12);
+  box-shadow: 0 12px 30px rgba(57, 47, 36, 0.1);
   cursor: zoom-in;
 }
 
@@ -910,7 +921,7 @@ h3 {
 }
 
 .architecture-visual figcaption {
-  margin-top: 10px;
+  margin-top: 7px;
   color: var(--muted);
   font-size: 0.86rem;
   font-weight: 700;
@@ -952,7 +963,7 @@ h3 {
 
 .architecture-caption {
   max-width: 1050px;
-  margin: -8px 0 0;
+  margin: -4px 0 0;
   padding-left: 14px;
   border-left: 3px solid var(--accent);
   color: var(--muted);
