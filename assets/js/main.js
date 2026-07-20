@@ -296,12 +296,43 @@ const initSectionNavigation = () => {
   updateActiveSection();
 };
 
+const initArchitectureImage = () => {
+  const visual = document.querySelector("[data-architecture-visual]");
+  const focus = document.querySelector("[data-architecture-focus]");
+  const toggle = document.querySelector("[data-architecture-toggle]");
+  const close = document.querySelector("[data-architecture-close]");
+  if (!visual || !focus || !toggle || !close) return;
+
+  const frame = visual.querySelector(".architecture-image-frame");
+  const openFocus = () => {
+    focus.hidden = false;
+    document.body.classList.add("has-architecture-focus");
+    close.focus();
+  };
+  const closeFocus = () => {
+    focus.hidden = true;
+    document.body.classList.remove("has-architecture-focus");
+    toggle.focus();
+  };
+
+  toggle.addEventListener("click", openFocus);
+  frame?.addEventListener("click", openFocus);
+  close.addEventListener("click", closeFocus);
+  focus.addEventListener("click", (event) => {
+    if (event.target === focus) closeFocus();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !focus.hidden) closeFocus();
+  });
+};
+
 const init = async () => {
   const yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
   initMenu();
   initActivePage();
   initSectionNavigation();
+  initArchitectureImage();
 
   const [profile, experience, impacts, peerReviews, publications, volunteering, judging, speaking, technicalCommittee, writing, recognition] = await Promise.all([
     loadJSON("data/profile.json"),

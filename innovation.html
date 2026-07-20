@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260601-warm-tabs" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260720-architecture-image" />
 </head>
 <body data-page="innovation">
   <header class="top-rail"><a class="rail-line" href="index.html">AI · Fraud · Fintech · Cloud-Native Architecture</a><div class="rail-links"><span>Patent Filed</span><span>Service Meshes</span><span>Cloud Platforms</span></div></header>
@@ -22,6 +22,10 @@
         <h2>Master of Service Meshes</h2>
         <p>Patent application filed. Inventor: Sivakumar Dhanasekar. Ref. No: 096923-1509158 (EFX-216US).</p>
       </div>
+    </section>
+    <section class="section muted">
+      <div class="section-title"><h2>Publications &amp; Journals</h2></div>
+      <div class="card-grid" data-render="publications"></div>
     </section>
     <section class="section muted">
       <div class="section-title"><h2>Secure Monolith-to-Cloud Modernisation</h2></div>
@@ -48,76 +52,25 @@
           </div>
         </div>
 
-        <div class="architecture-diagram" aria-label="Secure monolith-to-cloud modernisation architecture">
-          <div class="diagram-column legacy">
-            <span class="diagram-label">Legacy Side</span>
-            <h3>On-Premises Environment</h3>
-            <div class="diagram-node primary">Large Monolith Application<br><small>Java/J2EE · WebSphere · Batch Jobs</small></div>
-            <div class="diagram-stack">
-              <span>Internal Databases</span>
-              <span>External Data Feeds</span>
-              <span>File Shares / Queues</span>
-              <span>Identity · Risk · Order APIs</span>
-            </div>
+        <div class="architecture-toolbar" aria-label="Architecture image controls">
+          <button class="button secondary" type="button" data-architecture-toggle>Expand diagram</button>
+          <a class="button primary" href="assets/img/cloud-migration-high-level-architecture.png" target="_blank" rel="noopener noreferrer">Open full image</a>
+        </div>
+        <figure class="architecture-visual" data-architecture-visual>
+          <div class="architecture-image-frame" tabindex="0" aria-label="Scrollable high-level architecture diagram">
+            <img src="assets/img/cloud-migration-high-level-architecture.png" alt="Secure Monolith-to-Cloud Modernisation high-level architecture showing legacy estate, migration innovation layer, secure cloud target state, and business outcomes." loading="lazy" />
           </div>
-          <div class="architecture-arrow" aria-hidden="true">Assessment</div>
-          <div class="diagram-column readiness">
-            <span class="diagram-label">Assessment</span>
-            <h3>Cloud Readiness</h3>
-            <div class="diagram-stack">
-              <span>Application Inventory</span>
-              <span>Dependency Mapping</span>
-              <span>SAST · DAST · Dependency Review</span>
-              <span>Latency · Throughput · Cost Baseline</span>
-            </div>
-            <div class="diagram-node decision">Readiness Decision</div>
-          </div>
-          <div class="architecture-arrow" aria-hidden="true">Innovation</div>
-          <div class="diagram-column innovation">
-            <span class="diagram-label">Innovation Layer</span>
-            <h3>Modernisation Pattern</h3>
-            <div class="diagram-node primary">API Facade Layer</div>
-            <div class="diagram-stack">
-              <span>Strangler Pattern</span>
-              <span>Serverless Prototype</span>
-              <span>Application Hardening</span>
-              <span>Enterprise Architecture Approval</span>
-            </div>
-          </div>
-          <div class="architecture-arrow" aria-hidden="true">Target State</div>
-          <div class="diagram-column cloud">
-            <span class="diagram-label">Cloud Target</span>
-            <h3>Secure Cloud Platform</h3>
-            <div class="diagram-node primary">API Gateway</div>
-            <div class="diagram-stack">
-              <span>Spring Boot / Microservices</span>
-              <span>Serverless Functions</span>
-              <span>Managed Database · Event Bus</span>
-              <span>CI/CD · IAM · Secrets · Monitoring</span>
-            </div>
-          </div>
-          <div class="architecture-arrow" aria-hidden="true">Outcomes</div>
-          <div class="diagram-column outcomes">
-            <span class="diagram-label">Outcomes</span>
-            <h3>Business Impact</h3>
-            <div class="diagram-stack outcome-list">
-              <span>Reduced Legacy Risk</span>
-              <span>Improved Cloud Readiness</span>
-              <span>Stronger Security Posture</span>
-              <span>Scalable Deployment Model</span>
-              <span>Reusable Migration Pattern</span>
-            </div>
-          </div>
+          <figcaption>High-level architecture evidence for secure monolith-to-cloud modernisation. Use the expand control or horizontal scroll on smaller screens to inspect the full diagram.</figcaption>
+        </figure>
+        <div class="architecture-focus" data-architecture-focus hidden>
+          <button class="architecture-close" type="button" data-architecture-close aria-label="Close expanded architecture diagram">x</button>
+          <img src="assets/img/cloud-migration-high-level-architecture.png" alt="Expanded Secure Monolith-to-Cloud Modernisation high-level architecture diagram." />
         </div>
         <p class="architecture-caption">High-level architecture overview showing secure migration of a large monolithic application from on-premises infrastructure to a cloud-ready architecture, highlighting dependency mapping, vulnerability remediation, API facade design, serverless prototyping, Enterprise Architecture approval, CI/CD controls, observability, and reusable migration outcomes.</p>
       </div>
     </section>
-    <section class="section muted">
-      <div class="section-title"><h2>Publications &amp; Journals</h2></div>
-      <div class="card-grid" data-render="publications"></div>
-    </section>
   </main>
   <footer class="site-footer"><span>© <span data-year></span> Sivakumar Dhanasekar</span><span>Invention · Platforms · Architecture</span></footer>
-  <script src="assets/js/main.js?v=20260601-warm-tabs" defer></script>
+  <script src="assets/js/main.js?v=20260720-architecture-image" defer></script>
 </body>
 </html>
