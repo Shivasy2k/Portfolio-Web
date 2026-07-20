@@ -15,8 +15,16 @@
     <a href="index.html#home">Home</a><a href="index.html#about">About</a><a href="innovation.html">Invention and innovation</a><a href="recognition.html">Inspiring others</a><a href="leadership.html">Leadership and Consulting</a><a href="index.html#public-influence">Public influencer</a>
   </nav>
   <main>
-    <section class="section muted">
+    <section class="section two-column">
       <div class="section-title"><h1 class="page-heading">Invention &amp; Innovation</h1></div>
+      <div class="feature-card">
+        <span class="label">Patent Filed</span>
+        <h2>Master of Service Meshes</h2>
+        <p>Patent application filed. Inventor: Sivakumar Dhanasekar. Ref. No: 096923-1509158 (EFX-216US).</p>
+      </div>
+    </section>
+    <section class="section muted">
+      <div class="section-title"><h2>Secure Monolith-to-Cloud Modernisation</h2></div>
       <div class="architecture-case">
         <div class="architecture-title">
           <span class="label">Architecture</span>
@@ -41,40 +49,67 @@
         </div>
 
         <div class="architecture-diagram" aria-label="Secure monolith-to-cloud modernisation architecture">
-          <div class="architecture-stage">
-            <h3>Legacy On-Premises</h3>
-            <p>Java/J2EE monolith, WebSphere, batch jobs, internal databases, file shares, queues, schedulers, and identity/risk/order APIs.</p>
+          <div class="diagram-column legacy">
+            <span class="diagram-label">Legacy Side</span>
+            <h3>On-Premises Environment</h3>
+            <div class="diagram-node primary">Large Monolith Application<br><small>Java/J2EE · WebSphere · Batch Jobs</small></div>
+            <div class="diagram-stack">
+              <span>Internal Databases</span>
+              <span>External Data Feeds</span>
+              <span>File Shares / Queues</span>
+              <span>Identity · Risk · Order APIs</span>
+            </div>
           </div>
           <div class="architecture-arrow" aria-hidden="true">Assessment</div>
-          <div class="architecture-stage">
+          <div class="diagram-column readiness">
+            <span class="diagram-label">Assessment</span>
             <h3>Cloud Readiness</h3>
-            <p>Application inventory, dependency mapping, SAST/DAST review, dependency scans, performance baseline, and readiness scoring.</p>
+            <div class="diagram-stack">
+              <span>Application Inventory</span>
+              <span>Dependency Mapping</span>
+              <span>SAST · DAST · Dependency Review</span>
+              <span>Latency · Throughput · Cost Baseline</span>
+            </div>
+            <div class="diagram-node decision">Readiness Decision</div>
           </div>
           <div class="architecture-arrow" aria-hidden="true">Innovation</div>
-          <div class="architecture-stage">
-            <h3>Migration Layer</h3>
-            <p>API facade, strangler pattern, serverless prototype, dependency upgrades, configuration cleanup, and architecture approval.</p>
+          <div class="diagram-column innovation">
+            <span class="diagram-label">Innovation Layer</span>
+            <h3>Modernisation Pattern</h3>
+            <div class="diagram-node primary">API Facade Layer</div>
+            <div class="diagram-stack">
+              <span>Strangler Pattern</span>
+              <span>Serverless Prototype</span>
+              <span>Application Hardening</span>
+              <span>Enterprise Architecture Approval</span>
+            </div>
           </div>
           <div class="architecture-arrow" aria-hidden="true">Target State</div>
-          <div class="architecture-stage">
+          <div class="diagram-column cloud">
+            <span class="diagram-label">Cloud Target</span>
             <h3>Secure Cloud Platform</h3>
-            <p>API gateway, Spring Boot services, serverless functions, managed database, event bus, CI/CD scanning, IAM, secrets, monitoring, and alerts.</p>
+            <div class="diagram-node primary">API Gateway</div>
+            <div class="diagram-stack">
+              <span>Spring Boot / Microservices</span>
+              <span>Serverless Functions</span>
+              <span>Managed Database · Event Bus</span>
+              <span>CI/CD · IAM · Secrets · Monitoring</span>
+            </div>
           </div>
           <div class="architecture-arrow" aria-hidden="true">Outcomes</div>
-          <div class="architecture-stage">
+          <div class="diagram-column outcomes">
+            <span class="diagram-label">Outcomes</span>
             <h3>Business Impact</h3>
-            <p>Reduced legacy risk, stronger security posture, scalable deployment model, improved cloud readiness, and reusable migration evidence.</p>
+            <div class="diagram-stack outcome-list">
+              <span>Reduced Legacy Risk</span>
+              <span>Improved Cloud Readiness</span>
+              <span>Stronger Security Posture</span>
+              <span>Scalable Deployment Model</span>
+              <span>Reusable Migration Pattern</span>
+            </div>
           </div>
         </div>
         <p class="architecture-caption">High-level architecture overview showing secure migration of a large monolithic application from on-premises infrastructure to a cloud-ready architecture, highlighting dependency mapping, vulnerability remediation, API facade design, serverless prototyping, Enterprise Architecture approval, CI/CD controls, observability, and reusable migration outcomes.</p>
-      </div>
-    </section>
-    <section class="section two-column">
-      <div class="section-title"><h2>Patent Filed</h2></div>
-      <div class="feature-card">
-        <span class="label">Patent Filed</span>
-        <h2>Master of Service Meshes</h2>
-        <p>Patent application filed. Inventor: Sivakumar Dhanasekar. Ref. No: 096923-1509158 (EFX-216US).</p>
       </div>
     </section>
     <section class="section muted">

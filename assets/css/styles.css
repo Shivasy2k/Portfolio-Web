@@ -829,35 +829,138 @@ h3 {
 }
 
 .architecture-diagram {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(5, minmax(170px, 1fr));
-  gap: 10px;
+  grid-template-columns: repeat(5, minmax(190px, 1fr));
+  gap: 0;
   align-items: stretch;
   overflow-x: auto;
-  padding-bottom: 6px;
-}
-
-.architecture-stage {
-  min-width: 170px;
-  min-height: 230px;
-  padding: 16px;
+  padding: 18px;
   border: 1px solid var(--line);
-  background: rgba(255, 253, 248, 0.88);
+  background:
+    linear-gradient(90deg, rgba(31, 79, 80, 0.08), rgba(224, 122, 95, 0.08)),
+    rgba(255, 253, 248, 0.94);
+  box-shadow: 0 18px 45px rgba(57, 47, 36, 0.08);
 }
 
-.architecture-stage h3 {
+.diagram-column {
+  position: relative;
+  min-width: 190px;
+  min-height: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid rgba(204, 190, 166, 0.78);
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.diagram-column + .architecture-arrow + .diagram-column {
+  border-left: 0;
+}
+
+.diagram-column::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -13px;
+  z-index: 2;
+  width: 26px;
+  height: 26px;
+  border-top: 2px solid var(--accent-dark);
+  border-right: 2px solid var(--accent-dark);
+  transform: translateY(-50%) rotate(45deg);
+  background: rgba(255, 253, 248, 0.92);
+}
+
+.diagram-column:last-child::after {
+  display: none;
+}
+
+.diagram-column.legacy {
+  border-left: 4px solid #7d6d52;
+}
+
+.diagram-column.readiness {
+  border-top: 4px solid #4f7c8a;
+}
+
+.diagram-column.innovation {
+  border-top: 4px solid var(--accent);
+}
+
+.diagram-column.cloud {
+  border-top: 4px solid var(--accent-dark);
+}
+
+.diagram-column.outcomes {
+  border-right: 4px solid #5d7c5e;
+}
+
+.diagram-column h3 {
   margin: 0 0 12px;
   font-family: Inter, system-ui, sans-serif;
-  font-size: 1rem;
+  font-size: 1.02rem;
   font-weight: 800;
   line-height: 1.25;
 }
 
-.architecture-stage p {
-  margin: 0;
+.diagram-label {
+  color: var(--accent-dark);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.diagram-node,
+.diagram-stack span {
+  display: block;
+  border: 1px solid rgba(204, 190, 166, 0.86);
+  background: rgba(255, 253, 248, 0.96);
+  color: var(--ink);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.diagram-node {
+  padding: 14px;
+  text-align: center;
+}
+
+.diagram-node.primary {
+  border-color: rgba(31, 79, 80, 0.36);
+  background: rgba(31, 79, 80, 0.1);
+  color: var(--accent-dark);
+}
+
+.diagram-node.decision {
+  margin-top: auto;
+  border-color: rgba(224, 122, 95, 0.44);
+  background: rgba(224, 122, 95, 0.11);
+}
+
+.diagram-node small {
+  display: block;
+  margin-top: 6px;
   color: var(--muted);
-  font-size: 0.88rem;
-  line-height: 1.55;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.diagram-stack {
+  display: grid;
+  gap: 8px;
+}
+
+.diagram-stack span {
+  padding: 10px 11px;
+}
+
+.outcome-list span {
+  border-color: rgba(93, 124, 94, 0.32);
+  background: rgba(93, 124, 94, 0.09);
 }
 
 .architecture-arrow {
@@ -1150,12 +1253,22 @@ h3 {
 
   .architecture-diagram {
     grid-template-columns: 1fr;
+    gap: 14px;
     overflow-x: visible;
   }
 
-  .architecture-stage {
+  .diagram-column {
     min-width: 0;
     min-height: auto;
+    border: 1px solid var(--line);
+  }
+
+  .diagram-column::after {
+    top: auto;
+    right: auto;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%) rotate(135deg);
   }
 
   .hero {
