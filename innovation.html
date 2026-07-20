@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260720-architecture-image" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260720-split-innovation" />
 </head>
 <body data-page="innovation">
   <header class="top-rail"><a class="rail-line" href="index.html">AI · Fraud · Fintech · Cloud-Native Architecture</a><div class="rail-links"><span>Patent Filed</span><span>Service Meshes</span><span>Cloud Platforms</span></div></header>
@@ -23,54 +23,56 @@
         <p>Patent application filed. Inventor: Sivakumar Dhanasekar. Ref. No: 096923-1509158 (EFX-216US).</p>
       </div>
     </section>
-    <section class="section muted">
-      <div class="section-title"><h2>Publications &amp; Journals</h2></div>
-      <div class="card-grid" data-render="publications"></div>
-    </section>
-    <section class="section muted">
-      <div class="section-title"><h2>Secure Monolith-to-Cloud Modernisation</h2></div>
-      <div class="architecture-case">
-        <div class="architecture-title">
-          <span class="label">Architecture</span>
-          <h2>Secure Monolith-to-Cloud Modernisation</h2>
-          <p>2019-2021 • On-Premises Legacy Application to Secure Cloud Platform</p>
-        </div>
-        <div class="case-overview">
-          <article class="feature-card compact-card">
-            <span class="label">Case Summary</span>
-            <h3>On-Premises Legacy Application to Secure Cloud Platform</h3>
-            <p>This case-study architecture shows a secure cloud-modernisation approach for a large monolithic enterprise application connected to internal databases, external data feeds, batch files, queues, and internal APIs.</p>
-            <p>The innovation was not a simple lift-and-shift migration. It introduced dependency discovery, vulnerability remediation, API facade design, strangler-pattern migration, serverless prototyping, Enterprise Architecture approval, CI/CD security checks, and cloud readiness controls.</p>
-          </article>
-          <div class="impact-grid">
-            <span>1,000+ vulnerabilities remediated</span>
-            <span>20+ offshore engineers guided</span>
-            <span>Secure cloud deployment enabled</span>
-            <span>Serverless prototype approved</span>
-            <span>Latency improved by up to 30%</span>
-            <span>Reusable migration pattern established</span>
+    <section class="section muted innovation-split">
+      <div class="innovation-pane publications-pane">
+        <div class="section-title"><h2>Publications &amp; Journals</h2></div>
+        <div class="card-grid" data-render="publications"></div>
+      </div>
+      <div class="innovation-pane architecture-pane">
+        <div class="section-title"><h2>Secure Monolith-to-Cloud Modernisation</h2></div>
+        <div class="architecture-case">
+          <div class="architecture-title">
+            <span class="label">Architecture</span>
+            <h2>Secure Monolith-to-Cloud Modernisation</h2>
+            <p>2019-2021 • On-Premises Legacy Application to Secure Cloud Platform</p>
           </div>
-        </div>
+          <div class="case-overview">
+            <article class="feature-card compact-card">
+              <span class="label">Case Summary</span>
+              <h3>On-Premises Legacy Application to Secure Cloud Platform</h3>
+              <p>This case-study architecture shows a secure cloud-modernisation approach for a large monolithic enterprise application connected to internal databases, external data feeds, batch files, queues, and internal APIs.</p>
+              <p>The innovation was not a simple lift-and-shift migration. It introduced dependency discovery, vulnerability remediation, API facade design, strangler-pattern migration, serverless prototyping, Enterprise Architecture approval, CI/CD security checks, and cloud readiness controls.</p>
+            </article>
+            <div class="impact-grid">
+              <span>1,000+ vulnerabilities remediated</span>
+              <span>20+ offshore engineers guided</span>
+              <span>Secure cloud deployment enabled</span>
+              <span>Serverless prototype approved</span>
+              <span>Latency improved by up to 30%</span>
+              <span>Reusable migration pattern established</span>
+            </div>
+          </div>
 
-        <div class="architecture-toolbar" aria-label="Architecture image controls">
-          <button class="button secondary" type="button" data-architecture-toggle>Expand diagram</button>
-          <a class="button primary" href="assets/img/cloud-migration-high-level-architecture.png" target="_blank" rel="noopener noreferrer">Open full image</a>
-        </div>
-        <figure class="architecture-visual" data-architecture-visual>
-          <div class="architecture-image-frame" tabindex="0" aria-label="Scrollable high-level architecture diagram">
-            <img src="assets/img/cloud-migration-high-level-architecture.png" alt="Secure Monolith-to-Cloud Modernisation high-level architecture showing legacy estate, migration innovation layer, secure cloud target state, and business outcomes." loading="lazy" />
+          <div class="architecture-toolbar" aria-label="Architecture image controls">
+            <button class="button secondary" type="button" data-architecture-toggle>Expand diagram</button>
+            <a class="button primary" href="assets/img/cloud-migration-high-level-architecture.png" target="_blank" rel="noopener noreferrer">Open full image</a>
           </div>
-          <figcaption>High-level architecture evidence for secure monolith-to-cloud modernisation. Use the expand control or horizontal scroll on smaller screens to inspect the full diagram.</figcaption>
-        </figure>
-        <div class="architecture-focus" data-architecture-focus hidden>
-          <button class="architecture-close" type="button" data-architecture-close aria-label="Close expanded architecture diagram">x</button>
-          <img src="assets/img/cloud-migration-high-level-architecture.png" alt="Expanded Secure Monolith-to-Cloud Modernisation high-level architecture diagram." />
+          <figure class="architecture-visual" data-architecture-visual>
+            <div class="architecture-image-frame" tabindex="0" aria-label="Hover or click to expand high-level architecture diagram">
+              <img src="assets/img/cloud-migration-high-level-architecture.png" alt="Secure Monolith-to-Cloud Modernisation high-level architecture showing legacy estate, migration innovation layer, secure cloud target state, and business outcomes." loading="lazy" />
+            </div>
+            <figcaption>Hover to enlarge the diagram preview, or click Expand diagram to inspect the full architecture.</figcaption>
+          </figure>
+          <div class="architecture-focus" data-architecture-focus hidden>
+            <button class="architecture-close" type="button" data-architecture-close aria-label="Close expanded architecture diagram">x</button>
+            <img src="assets/img/cloud-migration-high-level-architecture.png" alt="Expanded Secure Monolith-to-Cloud Modernisation high-level architecture diagram." />
+          </div>
+          <p class="architecture-caption">High-level architecture overview showing secure migration of a large monolithic application from on-premises infrastructure to a cloud-ready architecture, highlighting dependency mapping, vulnerability remediation, API facade design, serverless prototyping, Enterprise Architecture approval, CI/CD controls, observability, and reusable migration outcomes.</p>
         </div>
-        <p class="architecture-caption">High-level architecture overview showing secure migration of a large monolithic application from on-premises infrastructure to a cloud-ready architecture, highlighting dependency mapping, vulnerability remediation, API facade design, serverless prototyping, Enterprise Architecture approval, CI/CD controls, observability, and reusable migration outcomes.</p>
       </div>
     </section>
   </main>
   <footer class="site-footer"><span>© <span data-year></span> Sivakumar Dhanasekar</span><span>Invention · Platforms · Architecture</span></footer>
-  <script src="assets/js/main.js?v=20260720-architecture-image" defer></script>
+  <script src="assets/js/main.js?v=20260720-split-innovation" defer></script>
 </body>
 </html>

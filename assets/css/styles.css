@@ -784,18 +784,56 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.innovation-split {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.92fr) minmax(420px, 1.08fr);
+  gap: clamp(24px, 3vw, 44px);
+  align-items: start;
+}
+
+.innovation-pane {
+  min-width: 0;
+}
+
+.innovation-pane .section-title {
+  margin-bottom: 20px;
+}
+
+.publications-pane .card-grid {
+  display: block;
+}
+
+.publications-pane .publication-group {
+  margin-top: 22px;
+}
+
+.publications-pane .publication-item {
+  grid-template-columns: 82px minmax(0, 1fr);
+  gap: 10px 14px;
+}
+
+.publications-pane .publication-item > span:nth-child(3),
+.publications-pane .publication-status,
+.publications-pane .publication-item a {
+  grid-column: 2;
+}
+
+.publications-pane .publication-item > span:nth-child(3) {
+  margin-top: -4px;
+}
+
 .architecture-case {
   display: grid;
-  gap: 26px;
+  gap: 20px;
 }
 
 .architecture-title {
-  max-width: 980px;
+  max-width: 100%;
 }
 
 .architecture-title h2 {
   margin: 8px 0 10px;
-  font-size: clamp(1.8rem, 3.4vw, 2.8rem);
+  font-size: clamp(1.55rem, 2.4vw, 2.2rem);
 }
 
 .architecture-title p {
@@ -809,13 +847,14 @@ h3 {
 
 .case-overview {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+  grid-template-columns: 1fr;
   gap: 18px;
   align-items: start;
 }
 
 .impact-grid {
   display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
 
@@ -844,6 +883,7 @@ h3 {
 }
 
 .architecture-image-frame {
+  position: relative;
   overflow: auto;
   border: 1px solid var(--line);
   background: #edf1f6;
@@ -858,13 +898,15 @@ h3 {
 
 .architecture-image-frame img {
   width: 100%;
-  min-width: 980px;
+  min-width: 0;
   height: auto;
-  transition: transform 0.2s ease;
+  transform-origin: center;
+  transition: transform 0.22s ease, filter 0.22s ease;
 }
 
 .architecture-image-frame:hover img {
-  transform: scale(1.01);
+  transform: scale(1.08);
+  filter: contrast(1.04) saturate(1.03);
 }
 
 .architecture-visual figcaption {
@@ -1184,6 +1226,7 @@ h3 {
 @media (max-width: 900px) {
   .hero,
   .two-column,
+  .innovation-split,
   .contact {
     grid-template-columns: 1fr;
   }
@@ -1267,6 +1310,20 @@ h3 {
   .publication-item {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .publications-pane .publication-item {
+    grid-template-columns: 1fr;
+  }
+
+  .publications-pane .publication-item > span:nth-child(3),
+  .publications-pane .publication-status,
+  .publications-pane .publication-item a {
+    grid-column: auto;
+  }
+
+  .impact-grid {
+    grid-template-columns: 1fr;
   }
 
   .impact-grid span {
