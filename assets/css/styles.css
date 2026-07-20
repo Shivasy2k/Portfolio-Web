@@ -780,6 +780,105 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.architecture-case {
+  display: grid;
+  gap: 26px;
+}
+
+.case-overview {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.42fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.impact-grid,
+.evidence-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.impact-grid span,
+.evidence-grid span {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  color: var(--accent-dark);
+  background: rgba(255, 255, 255, 0.82);
+  font-size: 0.82rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.architecture-diagram {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(170px, 1fr));
+  gap: 10px;
+  align-items: stretch;
+  overflow-x: auto;
+  padding-bottom: 6px;
+}
+
+.architecture-stage {
+  min-width: 170px;
+  min-height: 230px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 253, 248, 0.88);
+}
+
+.architecture-stage h3 {
+  margin: 0 0 12px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.architecture-stage p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.architecture-arrow {
+  display: none;
+}
+
+.architecture-caption {
+  max-width: 1050px;
+  margin: -8px 0 0;
+  padding-left: 14px;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.case-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(260px, 0.9fr);
+  gap: 18px;
+}
+
+.case-detail-grid article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.case-detail-grid ul {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
+.case-detail-grid li + li {
+  margin-top: 8px;
+}
+
 .volunteer-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -1051,6 +1150,21 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .case-overview,
+  .case-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .architecture-diagram {
+    grid-template-columns: 1fr;
+    overflow-x: visible;
+  }
+
+  .architecture-stage {
+    min-width: 0;
+    min-height: auto;
+  }
+
   .hero {
     min-height: auto;
   }
@@ -1126,6 +1240,11 @@ h3 {
   .publication-item {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+
+  .impact-grid span,
+  .evidence-grid span {
+    min-height: auto;
   }
 
   .site-footer {
