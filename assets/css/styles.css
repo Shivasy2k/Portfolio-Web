@@ -1078,6 +1078,83 @@ body[data-page="innovation"] .section.two-column .feature-card p {
   text-transform: uppercase;
 }
 
+.talks-section {
+  background: var(--paper);
+}
+
+.talks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.talk-card {
+  position: relative;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 14px 34px rgba(57, 47, 36, 0.08);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.talk-card:hover,
+.talk-card:focus-visible {
+  z-index: 4;
+  transform: translateY(-6px) scale(1.035);
+  border-color: var(--accent);
+  background: var(--white);
+  box-shadow: 0 24px 54px rgba(57, 47, 36, 0.18);
+  outline: none;
+}
+
+.talk-thumb {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #eef1f4;
+  aspect-ratio: 16 / 9;
+}
+
+.talk-thumb.certificate {
+  aspect-ratio: 4 / 3;
+}
+
+.talk-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.22s ease, filter 0.22s ease;
+}
+
+.talk-thumb.certificate img {
+  object-fit: contain;
+  background: #f5f6f7;
+}
+
+.talk-card:hover .talk-thumb img,
+.talk-card:focus-visible .talk-thumb img {
+  transform: scale(1.08);
+  filter: contrast(1.04) saturate(1.04);
+}
+
+.talk-card h3 {
+  margin: 0;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(1rem, 1.35vw, 1.2rem);
+  line-height: 1.3;
+}
+
+.talk-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
