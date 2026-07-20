@@ -790,7 +790,26 @@ body[data-page="innovation"] .section {
 }
 
 body[data-page="innovation"] .section.two-column {
-  padding-bottom: clamp(20px, 3vw, 34px);
+  gap: clamp(16px, 2.4vw, 34px);
+  padding-top: clamp(20px, 3vw, 34px);
+  padding-bottom: clamp(14px, 2vw, 24px);
+}
+
+body[data-page="innovation"] .page-heading {
+  font-size: clamp(1.8rem, 3.2vw, 2.65rem);
+}
+
+body[data-page="innovation"] .section.two-column .feature-card {
+  padding: clamp(18px, 2.8vw, 28px);
+}
+
+body[data-page="innovation"] .section.two-column .feature-card h2 {
+  margin-bottom: 8px;
+  font-size: clamp(1.35rem, 2.2vw, 2rem);
+}
+
+body[data-page="innovation"] .section.two-column .feature-card p {
+  margin-bottom: 0;
 }
 
 .innovation-split {
