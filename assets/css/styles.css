@@ -29,7 +29,8 @@ body {
   line-height: 1.65;
 }
 
-body.has-architecture-focus {
+body.has-architecture-focus,
+body.has-talk-focus {
   overflow: hidden;
 }
 
@@ -1153,6 +1154,59 @@ body[data-page="innovation"] .section.two-column .feature-card p {
   font-size: 0.86rem;
   font-weight: 700;
   line-height: 1.45;
+}
+
+.talk-focus {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+  padding: clamp(18px, 4vw, 48px);
+  background: rgba(12, 28, 50, 0.92);
+}
+
+.talk-focus[hidden] {
+  display: none;
+}
+
+.talk-focus figure {
+  width: min(1180px, 94vw);
+  margin: 0;
+}
+
+.talk-focus img {
+  width: 100%;
+  max-height: 82vh;
+  object-fit: contain;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: #f5f6f7;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36);
+}
+
+.talk-focus figcaption {
+  margin-top: 12px;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.talk-close {
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  display: inline-grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 1.1rem;
+  font-weight: 900;
+  cursor: pointer;
 }
 
 .card-grid {

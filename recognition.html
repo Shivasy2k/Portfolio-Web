@@ -6,7 +6,7 @@
   <title>Recognition | Sivakumar Dhanasekar</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css?v=20260720-talks" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260720-talks-modal" />
 </head>
 <body data-page="recognition">
   <header class="top-rail"><a class="rail-line" href="index.html">AI · Fraud · Fintech · Cloud-Native Architecture</a><div class="rail-links"><span>Memberships</span><span>Certifications</span><span>Academic Service</span></div></header>
@@ -21,52 +21,59 @@
     <section class="section talks-section">
       <div class="section-title"><h2>Talks and Presentations</h2></div>
       <div class="talks-grid">
-        <a class="talk-card" href="assets/img/talks/generationai-sivakumar-dhanasekar.jpeg" target="_blank" rel="noopener noreferrer">
+        <a class="talk-card" href="assets/img/talks/generationai-sivakumar-dhanasekar.jpeg" data-talk-image="assets/img/talks/generationai-sivakumar-dhanasekar.jpeg" data-talk-title="GenerationAI Conference Speaker">
           <span class="label">Conference Speaker</span>
           <div class="talk-thumb"><img src="assets/img/talks/generationai-sivakumar-dhanasekar.jpeg" alt="GenerationAI Conference speaker banner for Sivakumar Dhanasekar" loading="lazy" /></div>
           <h3>GenerationAI Conference Speaker</h3>
           <p>Artificial Intelligence in Finance</p>
         </a>
-        <a class="talk-card" href="assets/img/talks/ieee-tems-industry-forum.webp" target="_blank" rel="noopener noreferrer">
+        <a class="talk-card" href="assets/img/talks/ieee-tems-industry-forum.webp" data-talk-image="assets/img/talks/ieee-tems-industry-forum.webp" data-talk-title="IEEE TEMS Global Industry Forum">
           <span class="label">Industry Forum</span>
           <div class="talk-thumb"><img src="assets/img/talks/ieee-tems-industry-forum.webp" alt="IEEE TEMS 2026 Global Industry Forum speaker poster" loading="lazy" /></div>
           <h3>IEEE TEMS Global Industry Forum</h3>
           <p>The Intelligent Edge</p>
         </a>
-        <a class="talk-card" href="assets/img/talks/cvr-2026-keynote-speakers.png" target="_blank" rel="noopener noreferrer">
+        <a class="talk-card" href="assets/img/talks/cvr-2026-keynote-speakers.png" data-talk-image="assets/img/talks/cvr-2026-keynote-speakers.png" data-talk-title="CVR 2026 Keynote Speaker">
           <span class="label">Keynote Speaker</span>
           <div class="talk-thumb"><img src="assets/img/talks/cvr-2026-keynote-speakers.png" alt="CVR 2026 keynote speakers listing with Sivakumar Dhanasekar" loading="lazy" /></div>
           <h3>CVR 2026 Keynote Speaker</h3>
           <p>Conference speaker listing</p>
         </a>
-        <a class="talk-card" href="assets/img/talks/apidays-new-york-speakers.png" target="_blank" rel="noopener noreferrer">
+        <a class="talk-card" href="assets/img/talks/apidays-new-york-speakers.png" data-talk-image="assets/img/talks/apidays-new-york-speakers.png" data-talk-title="API Days New York Speaker">
           <span class="label">Speaker Listing</span>
           <div class="talk-thumb"><img src="assets/img/talks/apidays-new-york-speakers.png" alt="API Days New York speaker listing with Sivakumar Dhanasekar" loading="lazy" /></div>
           <h3>API Days New York Speaker</h3>
           <p>GenerationAI / FOST New York</p>
         </a>
-        <a class="talk-card" href="assets/docs/talks/cvr-2026-keynote-certificate.pdf" target="_blank" rel="noopener noreferrer">
+        <a class="talk-card" href="assets/img/talks/cvr-2026-keynote-certificate.png" data-talk-image="assets/img/talks/cvr-2026-keynote-certificate.png" data-talk-title="CVR 2026 Keynote Certificate">
           <span class="label">Certificate</span>
           <div class="talk-thumb certificate"><img src="assets/img/talks/cvr-2026-keynote-certificate.png" alt="CVR 2026 keynote talk certificate preview" loading="lazy" /></div>
           <h3>CVR 2026 Keynote Certificate</h3>
           <p>Keynote talk certificate</p>
         </a>
-        <a class="talk-card" href="assets/docs/talks/imed-2026-invited-talk-certificate.pdf" target="_blank" rel="noopener noreferrer">
+        <a class="talk-card" href="assets/img/talks/imed-2026-invited-talk-certificate.png" data-talk-image="assets/img/talks/imed-2026-invited-talk-certificate.png" data-talk-title="IMED 2026 Invited Talk Certificate">
           <span class="label">Certificate</span>
           <div class="talk-thumb certificate"><img src="assets/img/talks/imed-2026-invited-talk-certificate.png" alt="IMED 2026 invited talk certificate preview" loading="lazy" /></div>
           <h3>IMED 2026 Invited Talk Certificate</h3>
           <p>Invited talk recognition</p>
         </a>
-        <a class="talk-card" href="assets/docs/talks/imed-2026-keynote-certificate.pdf" target="_blank" rel="noopener noreferrer">
+        <a class="talk-card" href="assets/img/talks/imed-2026-keynote-certificate.png" data-talk-image="assets/img/talks/imed-2026-keynote-certificate.png" data-talk-title="IMED 2026 Keynote Certificate">
           <span class="label">Certificate</span>
           <div class="talk-thumb certificate"><img src="assets/img/talks/imed-2026-keynote-certificate.png" alt="IMED 2026 keynote certificate preview" loading="lazy" /></div>
           <h3>IMED 2026 Keynote Certificate</h3>
           <p>Keynote presentation recognition</p>
         </a>
       </div>
+      <div class="talk-focus" data-talk-focus hidden>
+        <button class="talk-close" type="button" data-talk-close aria-label="Close talk preview">x</button>
+        <figure>
+          <img data-talk-focus-image alt="" />
+          <figcaption data-talk-focus-title></figcaption>
+        </figure>
+      </div>
     </section>
   </main>
   <footer class="site-footer"><span>© <span data-year></span> Sivakumar Dhanasekar</span><span>Memberships · Service · Certifications</span></footer>
-  <script src="assets/js/main.js?v=20260720-talks" defer></script>
+  <script src="assets/js/main.js?v=20260720-talks-modal" defer></script>
 </body>
 </html>

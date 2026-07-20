@@ -326,6 +326,46 @@ const initArchitectureImage = () => {
   });
 };
 
+const initTalkPreviews = () => {
+  const cards = document.querySelectorAll("[data-talk-image]");
+  const focus = document.querySelector("[data-talk-focus]");
+  const image = document.querySelector("[data-talk-focus-image]");
+  const title = document.querySelector("[data-talk-focus-title]");
+  const close = document.querySelector("[data-talk-close]");
+  if (!cards.length || !focus || !image || !title || !close) return;
+
+  let lastTrigger = null;
+  const openFocus = (card) => {
+    lastTrigger = card;
+    image.src = card.dataset.talkImage || "";
+    image.alt = card.querySelector("img")?.alt || card.dataset.talkTitle || "Talk preview";
+    title.textContent = card.dataset.talkTitle || card.querySelector("h3")?.textContent || "";
+    focus.hidden = false;
+    document.body.classList.add("has-talk-focus");
+    close.focus();
+  };
+  const closeFocus = () => {
+    focus.hidden = true;
+    document.body.classList.remove("has-talk-focus");
+    image.removeAttribute("src");
+    lastTrigger?.focus();
+  };
+
+  cards.forEach((card) => {
+    card.addEventListener("click", (event) => {
+      event.preventDefault();
+      openFocus(card);
+    });
+  });
+  close.addEventListener("click", closeFocus);
+  focus.addEventListener("click", (event) => {
+    if (event.target === focus) closeFocus();
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !focus.hidden) closeFocus();
+  });
+};
+
 const init = async () => {
   const yearEl = document.querySelector("[data-year]");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
@@ -333,6 +373,7 @@ const init = async () => {
   initActivePage();
   initSectionNavigation();
   initArchitectureImage();
+  initTalkPreviews();
 
   const [profile, experience, impacts, peerReviews, publications, volunteering, judging, speaking, technicalCommittee, writing, recognition] = await Promise.all([
     loadJSON("data/profile.json"),
