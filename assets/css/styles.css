@@ -1172,6 +1172,7 @@ body[data-page="innovation"] .section.two-column .feature-card p {
 }
 
 .talk-focus figure {
+  position: relative;
   width: min(1180px, 94vw);
   margin: 0;
 }
@@ -1194,16 +1195,17 @@ body[data-page="innovation"] .section.two-column .feature-card p {
 }
 
 .talk-close {
-  position: fixed;
-  top: 18px;
-  right: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
   display: inline-grid;
   place-items: center;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(255, 255, 255, 0.36);
+  border: 1px solid rgba(255, 255, 255, 0.52);
   color: var(--white);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(12, 28, 50, 0.78);
   font-size: 1.1rem;
   font-weight: 900;
   cursor: pointer;
