@@ -1156,6 +1156,14 @@ body[data-page="innovation"] .section.two-column .feature-card p {
   line-height: 1.45;
 }
 
+.tpc-section {
+  background: var(--panel);
+}
+
+.tpc-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
 .talk-focus {
   position: fixed;
   inset: 0;
