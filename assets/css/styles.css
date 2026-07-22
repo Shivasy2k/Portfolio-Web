@@ -1461,8 +1461,39 @@ body[data-page="home"] .two-column {
   gap: clamp(18px, 3vw, 40px);
 }
 
+body[data-page="home"] #patents,
+body[data-page="home"] #volunteering,
+body[data-page="home"] #speaking {
+  gap: clamp(14px, 2vw, 28px);
+  padding-top: clamp(18px, 2.8vw, 32px);
+  padding-bottom: clamp(18px, 2.8vw, 32px);
+}
+
+body[data-page="home"] #volunteering .section-title,
+body[data-page="home"] #speaking .section-title,
+body[data-page="home"] #patents .section-title {
+  align-self: start;
+}
+
 body[data-page="home"] .feature-card {
   padding: clamp(20px, 3vw, 30px);
+}
+
+body[data-page="home"] #patents .feature-card {
+  padding: clamp(18px, 2.4vw, 24px);
+}
+
+body[data-page="home"] #patents .feature-card h3 {
+  margin: 8px 0 8px;
+  font-size: clamp(1.18rem, 1.7vw, 1.55rem);
+}
+
+body[data-page="home"] #patents .feature-card p {
+  margin-bottom: 8px;
+}
+
+body[data-page="home"] #patents .feature-card p:last-child {
+  margin-bottom: 0;
 }
 
 body[data-page="home"] .profile-copy {
@@ -1483,6 +1514,59 @@ body[data-page="home"] .home-detail-grid {
 body[data-page="home"] .detail-card {
   min-height: 138px;
   padding: 16px;
+}
+
+body[data-page="home"] #volunteering .compact-card,
+body[data-page="home"] #speaking .compact-card {
+  margin-top: 0;
+  padding: 16px;
+}
+
+body[data-page="home"] #volunteering .compact-card h3,
+body[data-page="home"] #speaking .compact-card h3 {
+  margin: 8px 0;
+  font-size: clamp(1.08rem, 1.45vw, 1.35rem);
+}
+
+body[data-page="home"] #volunteering .compact-card p,
+body[data-page="home"] #speaking .compact-card p {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+body[data-page="home"] #volunteering .volunteer-tiles,
+body[data-page="home"] #speaking .speaking-tiles {
+  margin-top: 10px;
+}
+
+body[data-page="home"] #volunteering .volunteer-tile {
+  min-height: 112px;
+  padding: 12px;
+}
+
+body[data-page="home"] #volunteering .volunteer-tile h3 {
+  margin: 8px 0;
+  font-size: clamp(0.96rem, 1.15vw, 1.08rem);
+}
+
+body[data-page="home"] #speaking .speaking-tile {
+  min-height: 148px;
+  padding: 12px;
+}
+
+body[data-page="home"] #speaking .speaking-tile h3 {
+  margin: 8px 0;
+  font-size: clamp(0.96rem, 1.18vw, 1.08rem);
+}
+
+body[data-page="home"] #speaking .speaking-tile p {
+  font-size: 0.84rem;
+  line-height: 1.42;
+}
+
+body[data-page="home"] #speaking .speaking-tile small {
+  padding-top: 10px;
 }
 
 .detail-card h3 {
