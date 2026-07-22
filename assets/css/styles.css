@@ -1254,6 +1254,44 @@ body[data-page="innovation"] .section.two-column .feature-card p {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
+.public-committee-section {
+  background: var(--panel);
+}
+
+.committee-membership-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.committee-membership-item {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 14px 34px rgba(57, 47, 36, 0.08);
+}
+
+.committee-membership-item h3 {
+  margin: 10px 0 8px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: clamp(1rem, 1.35vw, 1.18rem);
+  line-height: 1.3;
+}
+
+.committee-membership-item p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.public-committee-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
 .talk-focus {
   position: fixed;
   inset: 0;
