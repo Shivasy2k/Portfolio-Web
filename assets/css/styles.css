@@ -1246,6 +1246,14 @@ body[data-page="innovation"] .section.two-column .feature-card p {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.judging-section {
+  background: var(--paper);
+}
+
+.judging-grid {
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
 .talk-focus {
   position: fixed;
   inset: 0;
